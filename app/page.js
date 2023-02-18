@@ -1,91 +1,68 @@
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from './page.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
+import { cn } from '@/lib/utils';
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="mt-4 mx-4">
+      <div
+        tabIndex={0}
+        className="collapse group border border-base-300 bg-base-200 rounded-box"
+      >
+        <input type="checkbox" className="peer" />
+        <div
+          className={cn(
+            'collapse-title peer-checked:bg-primary peer-checked:text-base-100',
+            'text-2xl font-extrabold leading-tight tracking-tighter md:text-3xl lg:text-4xl lg:leading-[1.1]'
+          )}
+        >
+          3D
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
+        <div className="collapse-content">
+          <ul className="mt-3 list-disc ml-8">
+            <li>
+              <a
+                className="link link-hover link-primary"
+                target="_blank"
+                href="https://www.tinkercad.com/things/53Z9TQMEg7H?sharecode=n44QGb4Ur-5pmHr_7arI3ZBwCLysVjRRvX3v9gB6708"
+              >
+                Pieuvre
+              </a>
+            </li>
+            <li>
+              <a
+                className="link link-hover link-primary"
+                target="_blank"
+                href="https://www.tinkercad.com/things/65HHmzHpr6J?sharecode=qVK7BKTaVO9Dv4tlBHxW5eKNx4iNdgQIbh41E4n4n84"
+              >
+                Chien Picasso
+              </a>
+            </li>
+            <li>
+              Boite Switch Creeper : {' '}
+              <a
+                className="link link-hover link-primary"
+                href="https://www.tinkercad.com/things/gyUYKJdGNbX?sharecode=2FNBdHCpebR_BMOSUgp17sIzn3EjYNEgnVvylQw8_7Y"
+                target="_blank"
+              >
+                [1]
+              </a>{' '}
+              <a
+                className="link link-hover link-primary"
+                href="https://www.tinkercad.com/things/f6WoSLy7S9g?sharecode=AWalE9_MysNQ_ML2g73AVa8oQFyvv7xmQ5ZRn2s22dI"
+                target="_blank"
+              >
+                [2]
+              </a>{' '}
+              <a
+                className="link link-hover link-primary"
+                href="https://www.tinkercad.com/things/hGxxcSVhqWC?sharecode=7letwWn2ovzvYGb4zHda2m84oZmom_3CzZnzve_dkyg"
+                target="_blank"
+              >
+                [3]
+              </a>
+            </li>
+          </ul>
         </div>
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
       </div>
     </main>
-  )
+  );
 }
