@@ -37,7 +37,7 @@ export default function Home() {
               </a>
             </li>
             <li>
-              Boite Switch Creeper : {' '}
+              Boite Switch Creeper :{' '}
               <a
                 className="link link-hover link-primary"
                 href="https://www.tinkercad.com/things/gyUYKJdGNbX?sharecode=2FNBdHCpebR_BMOSUgp17sIzn3EjYNEgnVvylQw8_7Y"
@@ -59,6 +59,23 @@ export default function Home() {
               >
                 [3]
               </a>
+            </li>
+            <li>
+              Louis - Porte clé Creeper{' '}
+              <a
+                className="link link-hover link-primary"
+                href="https://www.tinkercad.com/things/9K6cgxXITNp"
+                target="_blank"
+              >
+                (version 1)
+              </a>{' '}
+              <a
+                className="link link-hover link-primary"
+                href="https://www.tinkercad.com/things/ffDbXO9e7Ww"
+                target="_blank"
+              >
+                (version 2)
+              </a>{' '}
             </li>
           </ul>
         </div>
